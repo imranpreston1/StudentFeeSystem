@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Student Fee System</string>
+    <string name="add_student">Add Student</string>
+    <string name="edit_student">Edit Student</string>
+    <string name="student_detail">Student Details</string>
+    <string name="add_fee">Add Fee Record</string>
+    <string name="no_students">No students yet. Tap + to add one.</string>
+    <string name="no_fees">No fee records yet. Tap + to add one.</string>
+</resources>

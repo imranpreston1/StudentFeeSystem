@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Needed to connect to a paired Bluetooth thermal printer -->
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.StudentFeeSystem"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".ui.SetupActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.AddEditStudentActivity"
+            android:exported="false"
+            android:label="@string/add_student" />
+
+        <activity
+            android:name=".ui.StudentDetailActivity"
+            android:exported="false"
+            android:label="@string/student_detail" />
+
+        <activity
+            android:name=".ui.AddFeeActivity"
+            android:exported="false"
+            android:label="@string/add_fee" />
+
+    </application>
+
+</manifest>
